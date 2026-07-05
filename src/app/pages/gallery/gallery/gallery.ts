@@ -26,11 +26,6 @@ export class Gallery {
     url: "oporcoverafaarrow.png",
     title: "opocover"
   },
-  
-    {
-    url: "ryżostan.png",
-    title: "ryzostan"
-  },
     {
     url: "wroclove.jpeg",
     title: "wroclaw"
