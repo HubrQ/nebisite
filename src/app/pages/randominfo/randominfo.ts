@@ -12,12 +12,12 @@ export class Randominfo {
 slides: Slide[] = 
 [
   {
-    url: "/jackson.jpg",
+    url: "jackson.jpg",
     title:"guitarjackson"
 
   },
   {
-    url: "/ibanez2.jpg",
+    url: "ibanez2.jpg",
     title:"guitaribanez"
 
   },

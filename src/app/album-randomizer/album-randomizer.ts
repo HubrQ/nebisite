@@ -29,7 +29,7 @@ export class AlbumRandomizer implements OnInit {
   ngOnInit(): void {
   console.log('INIT');
 
-  this.http.get<Album[]>('/albums.json')
+  this.http.get<Album[]>('albums.json')
     .subscribe({
       next: (data) => {
         console.log('LOADED:', data);

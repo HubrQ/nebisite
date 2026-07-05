@@ -15,36 +15,36 @@ export class Gallery {
 [ 
   
   {
-    url: "/chaoticevildeathcorepochyloneV4.png",
+    url: "chaoticevildeathcorepochyloneV4.png",
     title: "chaovil"
   },
   {
-    url: "/opor.png",
+    url: "opor.png",
     title: "opor"
   },
   {
-    url: "/oporcoverafaarrow.png",
+    url: "oporcoverafaarrow.png",
     title: "opocover"
   },
   
     {
-    url: "/ryżostan.png",
+    url: "ryżostan.png",
     title: "ryzostan"
   },
     {
-    url: "/wroclove.jpeg",
+    url: "wroclove.jpeg",
     title: "wroclaw"
   },
   {
-    url: "/frog.png",
+    url: "frog.png",
     title: "frog"
   },
    {
-    url: "/butterflypix.png",
+    url: "butterflypix.png",
     title: "butterfly"
   },
    {
-    url: "/tshirtpix.png",
+    url: "tshirtpix.png",
     title: "tshirt"
   }
   
