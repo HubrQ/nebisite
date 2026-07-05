@@ -1,0 +1,17 @@
+.body
+{
+text-align: center;
+
+}
+.list{
+    text-align: center;
+    font-size: 25px;
+}
+.listproper
+{
+    display: inline-block;
+    text-align: left;
+
+}
+.top{font-size: 40px;}
+.sublist{font-size: 21px;}

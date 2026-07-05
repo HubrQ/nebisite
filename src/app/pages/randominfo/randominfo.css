@@ -1,0 +1,29 @@
+body{width: 1500px;
+text-align: center;
+margin: 0 auto;
+}
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+h3{font-size: 25px;}
+.gallery
+{
+    width: 200px;
+    margin-left: 0%;
+    float:left;
+    text-align: center;
+
+}
+.specgit{
+    float:left;
+    width: 600px;
+    font-size: 25px;
+    margin-left: 5%;
+}
+.specpc{
+    float:left;
+    width: 600px;
+    font-size: 25px;
+}
+.specgit.h2{font-size: 30px;}
+
+li{margin: 10px 0;}

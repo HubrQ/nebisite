@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 250px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.album-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.album-right {
+  flex: 1;
+  display: flex;
+  min-width: 420px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.album-right iframe {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+/* Bandcamp needs more vertical space */
+.album-right iframe.bandcamp {
+ height: 500px;
+}
+.band {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.data {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.randombutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3rem;
+  width: 250px;
+
+  padding: 0 1rem;
+  border-radius: 0.625rem;
+
+  margin: 20px auto;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.listbutton{text-align: center;}
+
+
+.buttontext {
+  font-size: 22px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .album-right iframe {
+    max-width: 100%;
+  }
+}

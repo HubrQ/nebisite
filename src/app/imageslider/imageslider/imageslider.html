@@ -1,0 +1,24 @@
+<div class="slider" [style.height.px]="sliderHeight()">
+    <div class="arrow-hit left" (click)="gotoprev()">
+    <span class="arrow left">❮</span>
+  </div>
+  <div class="arrow-hit right" (click)="gotonext()">
+    <span class="arrow right">❯</span>
+  </div>
+    <div class="slides-overflow">
+        <div class="slides-container" 
+        [style.width.px]="parentWidth() * slides().length" 
+        [style.transform]="'translateX(-' + currentIndex()*parentWidth() + 'px)'">
+            @for (Slide of slides(); track $index)
+            {
+                <div class="slide" [ngStyle]="getStyle(Slide)"></div>
+            }
+        </div>    
+    </div>
+    <div class="dotscontainer">
+        @for(Slide of slides(); track $index){
+            <div class="dot" [class.active]="$index === currentIndex()" (click)="gotoslide($index)">⬤</div>
+        }
+
+    </div>
+</div>

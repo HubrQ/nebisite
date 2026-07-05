@@ -1,0 +1,41 @@
+<div class="container" *ngIf="currentAlbum">
+
+  <!-- LEFT SIDE -->
+  <div class="album-left">
+
+    <h2 class="band">{{ currentAlbum.band }}</h2>
+    <h3 class="title">{{ currentAlbum.title }}</h3>
+
+    <p class="data">
+      <span>Year: {{ currentAlbum.year }}</span>
+      <br>
+      <span>Genre: {{ currentAlbum.genre }}</span>
+    </p>
+
+    <!-- BUTTONS MUST BE INSIDE LEFT -->
+    <div class="controls">
+
+      <div class="randombutton" (click)="randomizer()">
+        <i class="fa-solid fa-dice"></i>
+        <p class="buttontext">Randomize Album!</p>
+      </div>
+
+      <div class="listbutton">
+        <a href="/albums.json">Full List</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE (optional embed) -->
+  <div class="album-right" *ngIf="currentAlbum?.link as link">
+    <iframe
+      [src]="getEmbedUrl(link)"
+        [ngClass]="{ bandcamp: link.includes('bandcamp') }"
+      width="100%"
+      height="380">
+    </iframe>
+  </div>
+
+</div>

@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+.body-light
+ {
+  background: #dcdcdc;
+    transition: background-color 0.5s ease, color 0.5s ease;
+ }
+.body-dark {
+  background: #070707;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.body-dark a:link{color:#f049ff}
+.body-dark a:visited{color:yellow}
+.body-light a:link{color:blue}
+.body-light a:visited{color:purple}
+.body-light a:link:hover{font-weight: bolder;}
+.body-dark a:link:hover{font-weight: bolder;}
+.body-dark .randombutton{background-color: rgba(255, 255, 0, 0.8); color: black;}
+.body-light .randombutton{background-color: #4b0fa6; color: white; }
+.body-dark .randombutton:hover{background-color: yellow; color: black;}
+.body-light .randombutton:hover{background-color: #f049ff; color: white; }
+
+/* Fade out old page */
+::view-transition-old(root) {
+  animation: fade-out 180ms ease;
+}
+
+/* Fade in new page */
+::view-transition-new(root) {
+  animation: fade-in 180ms ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
