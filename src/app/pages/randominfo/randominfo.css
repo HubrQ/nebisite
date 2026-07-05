@@ -27,3 +27,13 @@ h3{font-size: 25px;}
 .specgit.h2{font-size: 30px;}
 
 li{margin: 10px 0;}
+.nbprd{
+  background: linear-gradient(to right,
+      #FCF434,
+      #ffffff,
+      #9C59D1,
+      #000000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4px whitesmoke;
+}
